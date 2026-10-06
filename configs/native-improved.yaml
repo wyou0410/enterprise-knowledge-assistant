@@ -1,0 +1,29 @@
+backend: native
+version: native-improved
+label: 'native-V2 candidate: Top-K 5'
+prompt: prompts/native-baseline.txt
+knowledge_snapshot: null
+index_path: data/native/baseline.sqlite
+chat_model:
+  base_url: https://api.deepseek.com/v1
+  model: deepseek-v4-pro
+  temperature: 0
+  max_tokens: 2048
+  timeout_seconds: 60
+  max_retries_429: 2
+embedding:
+  base_url: null
+  model: text-embedding-v4
+  dimensions: 1024
+  max_input_chars: 6000
+  timeout_seconds: 60
+  max_retries_429: 2
+  batch_size: 8
+retrieval:
+  mode: vector
+  top_k: 5
+  reranker: null
+history_turns: 3
+max_message_chars: 24000
+frozen: false
+evaluation_policy: automated_only

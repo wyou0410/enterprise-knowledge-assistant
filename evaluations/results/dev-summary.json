@@ -1,0 +1,92 @@
+{
+  "kind": "sanitized_aggregate_of_recorded_live_dev_runs",
+  "recorded_date": "2026-10-06",
+  "release_prepared": "2026-10-07",
+  "corpus": {
+    "documents": 20,
+    "chunks": 726,
+    "document_bodies_included": false
+  },
+  "models": {
+    "chat": "deepseek-v4-pro",
+    "embedding": "text-embedding-v4",
+    "embedding_dimensions": 1024
+  },
+  "comparison": {
+    "same_snapshot_prompt_implementation_models_questions": true,
+    "changed_parameter": "retrieval.top_k",
+    "coverage_method": "Union of full retrieval doc_ids across recorded turns, per question"
+  },
+  "runs": {
+    "top_k_3": {
+      "top_k": 3,
+      "questions": 30,
+      "turns": 35,
+      "engineering_failure_rate": {
+        "numerator": 1,
+        "denominator": 30,
+        "value": 0.03333333333333333
+      },
+      "latency": {
+        "single_turn": {
+          "n": 35,
+          "median_ms": 2395.323,
+          "p95_ms": 3471.976,
+          "method": "nearest-rank"
+        },
+        "question_all_turns": {
+          "n": 30,
+          "median_ms": 2576.0375000000004,
+          "p95_ms": 4997.7,
+          "method": "nearest-rank"
+        }
+      },
+      "reference_document_coverage": {
+        "eligible_questions": 25,
+        "any": 24,
+        "all": 19,
+        "multi_doc_eligible": 7,
+        "multi_doc_all": 2
+      }
+    },
+    "top_k_5": {
+      "top_k": 5,
+      "questions": 30,
+      "turns": 35,
+      "engineering_failure_rate": {
+        "numerator": 0,
+        "denominator": 30,
+        "value": 0.0
+      },
+      "latency": {
+        "single_turn": {
+          "n": 35,
+          "median_ms": 2520.52,
+          "p95_ms": 3572.175,
+          "method": "nearest-rank"
+        },
+        "question_all_turns": {
+          "n": 30,
+          "median_ms": 2641.3720000000003,
+          "p95_ms": 5381.795,
+          "method": "nearest-rank"
+        }
+      },
+      "reference_document_coverage": {
+        "eligible_questions": 25,
+        "any": 24,
+        "all": 21,
+        "multi_doc_eligible": 7,
+        "multi_doc_all": 4
+      }
+    }
+  },
+  "human_answer_scoring": {
+    "required": false,
+    "performed": false
+  },
+  "semantic_quality_metrics": null,
+  "holdout_run": false,
+  "cost": "unknown",
+  "reproducibility": "Synthetic engineering workflow reproducible; private real-corpus aggregate cannot be replayed from this public release."
+}

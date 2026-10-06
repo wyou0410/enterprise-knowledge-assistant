@@ -1,0 +1,34 @@
+# Explicit whitelist. No discovery or recursive crawling. Candidates may fail.
+timeout_seconds: 30
+delay_seconds: 1
+max_bytes: 8000000
+license_status: pending
+license_reference: https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/LICENSE
+sources:
+  - {doc_id: DOC-001, topic: onboarding, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/onboarding/'}
+  - {doc_id: DOC-002, topic: onboarding, url: 'https://handbook.gitlab.com/handbook/people-group/general-onboarding/'}
+  - {doc_id: DOC-003, topic: onboarding, url: 'https://handbook.gitlab.com/handbook/people-group/general-onboarding/onboarding-buddies/'}
+  - {doc_id: DOC-004, topic: onboarding, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/getting-started/'}
+  - {doc_id: DOC-005, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/asynchronous/'}
+  - {doc_id: DOC-006, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/handbook-first/'}
+  - {doc_id: DOC-007, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/meetings/'}
+  - {doc_id: DOC-008, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/informal-communication/'}
+  - {doc_id: DOC-009, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/communication/'}
+  - {doc_id: DOC-010, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/tools-and-tips/'}
+  - {doc_id: DOC-011, topic: equipment, url: 'https://handbook.gitlab.com/handbook/finance/procurement/office-equipment-supplies/'}
+  - {doc_id: DOC-012, topic: equipment, url: 'https://handbook.gitlab.com/handbook/it/'}
+  - {doc_id: DOC-013, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/management/'}
+  - {doc_id: DOC-014, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/learning-and-development/'}
+  - {doc_id: DOC-015, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/self-service/'}
+  - {doc_id: DOC-016, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/being-a-great-remote-manager/'}
+  - {doc_id: DOC-017, topic: equipment, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/home-office/'}
+  - {doc_id: DOC-018, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/collaboration-and-whiteboarding/'}
+  - {doc_id: DOC-019, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/cross-culture-collaboration/'}
+  - {doc_id: DOC-020, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/values/'}
+  # Added after inspecting canonical links in downloaded DOC-001; whitelist v2.
+  - {doc_id: DOC-021, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/non-linear-workday/'}
+  - {doc_id: DOC-022, topic: equipment, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/workspace/'}
+  - {doc_id: DOC-023, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide/'}
+  - {doc_id: DOC-024, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/gitlab-for-remote/'}
+  - {doc_id: DOC-025, topic: collaboration, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/remote-work-emergency-plan/'}
+  - {doc_id: DOC-026, topic: onboarding, url: 'https://handbook.gitlab.com/handbook/company/culture/all-remote/remote-work-starter-guide/'}

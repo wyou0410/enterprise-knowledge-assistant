@@ -1,0 +1,20 @@
+name: Synthetic engineering checks
+on: [push, pull_request]
+jobs:
+  offline:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: uv sync --locked --extra test
+      - run: uv run --locked pytest -q
+      - run: uv run --locked knowledge-assistant evaluate --version native-baseline --mode mock --run-id ci-native-demo
+        env:
+          NATIVE_ALLOW_LIVE: 'false'
+          DIFY_ALLOW_LIVE: 'false'

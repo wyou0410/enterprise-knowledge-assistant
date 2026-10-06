@@ -1,0 +1,39 @@
+Actual demo run (scripted synthetic mode; no API calls)
+
+Inputs:
+What happens on the first day?
+/source 1
+如何申请电脑？
+我是员工
+电脑多久送到？
+每天工作几小时？
+/new
+/help
+/exit
+
+Output:
+Enterprise Knowledge Assistant | demo | MOCK · 原创虚构资料
+快照：synthetic-cli-670f2cfb74825e6a
+/help 帮助；/source 1 查看上一轮引用；/new 新对话；/exit 退出
+你 > 处理中…
+助手 [answered] > [MOCK · 原创虚构案例] On the first day, new employees complete a checklist and meet their onboarding buddy.
+[1] MOCK · 虚构入职流程 · DEMO001-0001 · https://example.invalid/onboarding
+你 > MOCK · 虚构入职流程 [DEMO001-0001]
+https://example.invalid/onboarding
+快照：synthetic-cli-670f2cfb74825e6a
+原创虚构资料 / Original synthetic policy: New employees complete a checklist and meet their onboarding buddy on their first day. 新员工第一天完成清单，并与入职伙伴见面。
+你 > 处理中…
+助手 [clarify] > [MOCK · 原创虚构案例] 设备申请步骤取决于身份。
+你是员工还是承包商？
+[1] MOCK · 虚构设备申请 · DEMO002-0001 · https://example.invalid/equipment
+你 > 处理中…
+助手 [answered] > [MOCK · 原创虚构案例] 员工通过 IT 门户申请电脑。
+[1] MOCK · 虚构设备申请 · DEMO002-0001 · https://example.invalid/equipment
+你 > 处理中…
+助手 [partial] > [MOCK · 原创虚构案例] 资料说明申请途径，但未规定送达时间。
+[1] MOCK · 虚构设备申请 · DEMO002-0001 · https://example.invalid/equipment
+你 > 处理中…
+助手 [insufficient] > [MOCK · 原创虚构案例] 演示资料不支持该问题。可试问：入职第一天做什么？员工如何申请电脑？
+你 > 已开始新对话。
+你 > /source 1 查看引用；/new 清空会话；/help 帮助；/exit 退出。demo 为 MOCK，live 才调用模型。
+你 > 再见。
